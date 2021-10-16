@@ -127,7 +127,10 @@ main {
   background: url(../images/tungshak.jpg) center/cover no-repeat;
   background-size: fill;
 }
-
+.fifth_three {
+  background: url(../images/chishak.jpg) center/cover no-repeat;
+  background-size: fill;
+}
 .sixth {
   background: url(../images/dhentsik.jpg) center/cover no-repeat;
   background-size: fill;
