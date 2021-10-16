@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.container {
+  background-image: linear-gradient(to right, #141e30, #243b55);
+  min-height: 100vh;
+}
+
+/* hide date */
+.date {
+  display: none;
+}
+
+/* menu */
+.menu {
+  position: fixed;
+  /* background-image: linear-gradient(to right, blue, white, red, green, yellow); */
+  /* width: 100vw; */
+}
+
+/* hidden contents */
+.menu_content {
+  position: absolute;
+  background-color: rgb(255, 161, 43);
+  border-radius: 1rem;
+  font-size: 2rem;
+  height: 25vh;
+  width: 80vw;
+  left: 10%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 20%;
+  text-align: center;
+}
+
+a {
+  color: rgb(241, 237, 237);
+  text-decoration: none;
+  margin: 1vw 0 0 7.5vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  border-radius: 10px;
+  height: auto;
+}
+
+a:active {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* title */
+.main_title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 6vw;
+}
+
+/* grid images */
+.sub_list {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 42px 0;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 35px;
+  margin: auto;
+}
+
+/* grids */
+.sub_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.grids {
+  width: 65vw;
+  height: 40vh;
+  margin-top: 20px;
+}
+
+.first {
+  background: url(../images/dolma.png) no-repeat;
+  background-size: cover;
+}
+
+.second {
+  background: url(../images/guru.jpg) center/cover no-repeat;
+  background-size: fill;
+}
+
+.guru2 {
+  background: url(../images/guru2.jpg) top/cover no-repeat;
+  background-size: fill;
+}
+
+.third {
+  background: url(../images/mikha.jpg) center/cover no-repeat;
+  background-size: fill;
+}
+
+.fourth {
+  background: url(../images/dalai-lama.jpeg) center/cover no-repeat;
+  background-position-y: 20%;
+}
+
+.fifth {
+  background: url(../images/buddha.jpg) center/cover no-repeat;
+  background-size: fill;
+}
+.fifth_one {
+  background: url(../images/zambalha.png) center/cover no-repeat;
+  background-size: fill;
+}
+.fifth_two {
+  background: url(../images/tungshak.jpg) center/cover no-repeat;
+  background-size: fill;
+}
+
+.sixth {
+  background: url(../images/dhentsik.jpg) center/cover no-repeat;
+  background-size: fill;
+}
+
+.prayer_names {
+  font-size: 7vw;
+  margin-top: 25vh;
+  color: white;
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgb(70, 19, 19);
+  text-align: center;
+}
+
+/* RESPONSIVE WEB SIZE */
+/* above 445px */
+@media (min-width: 445px) {
+  .prayer_names {
+    font-size: 7vw;
+    margin-top: 25vh;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    width: 70%;
+  }
+
+  .first {
+    background: url(../images/dolma.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .prayer_names {
+    font-size: 5vw;
+    margin-top: 25vh;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    width: 70%;
+  }
+
+  .first {
+    background: url(../images/dolma.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .prayer_names {
+    font-size: 5vw;
+    margin-top: 25vh;
+    color: white;
+    width: 70%;
+  }
+
+  .first {
+    background: url(../images/dolma.png) no-repeat;
+    background-size: 100%;
+  }
+
+  .sub_list {
+    margin-left: 7vw;
+  }
+}
